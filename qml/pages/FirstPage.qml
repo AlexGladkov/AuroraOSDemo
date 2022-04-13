@@ -116,48 +116,6 @@ Page {
                         }
                     }
                 }
-
-    //            Label {
-    //                x: 16
-    //                text: qsTr("Итого без доставки")
-    //                color: "#999999"
-    //                font.pixelSize: 20
-    //           }
-
-    //            Row {
-    //                id: priceCartRow
-    //                x: 16
-    //                width: column.width
-
-    //                Label {
-    //                    text: qsTr("999 товаров весом 6.5 кг")
-    //                    color: "#333333"
-    //                    font.pixelSize: 22
-    //               }
-
-    //                Label {
-    //                    text: qsTr("9 999 999")
-    //                    color: "#333333"
-    //                    font.pixelSize: 24
-    //               }
-
-    //                Label {
-    //                    text: qsTr(" ₽")
-    //                    color: "#333333"
-    //                    font.pixelSize: 20
-    //               }
-    //            }
-
-
-
-    //            Button {
-    //                text: "Оформить заказ 6"
-    //                backgroundColor: "#53C43F"
-    //                highlightColor: "#53C43F"
-    //                height: 48
-    //                width: column.width - 32
-    //                x: 16
-    //            }
            }
     }
 }
