@@ -11,19 +11,14 @@
 <context>
     <name>FirstPage</name>
     <message>
-        <source>Итого без доставки</source>
+        <source>Не прочитано</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>MailListScreen</name>
     <message>
-        <source>999 товаров весом 6.5 кг</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>9 999 999</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source> ₽</source>
+        <source>Не прочитано</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

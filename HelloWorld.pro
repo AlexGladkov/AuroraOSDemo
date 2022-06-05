@@ -20,8 +20,10 @@ SOURCES += src/HelloWorld.cpp \
 DISTFILES += qml/HelloWorld.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
+    qml/pages/FirstPage.qml \
     qml/pages/SecondPage.qml \
     qml/pages/SimpleList.qml \
+    qml/pages/maillist/MailCell.qml \
     rpm/HelloWorld.changes.in \
     rpm/HelloWorld.changes.run.in \
     rpm/HelloWorld.spec \

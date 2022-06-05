@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import QtQuick.Layouts 1.1
 
 Page {
     id: page
@@ -9,10 +10,8 @@ Page {
         anchors.fill: parent
         contentHeight: column.height
 
-
-        Column {
+        ColumnLayout {
                 id: column
-
                 width: page.width
                 height: page.height
                 spacing: Theme.paddingLarge
@@ -67,15 +66,22 @@ Page {
                     }
 
                     delegate: BackgroundItem {
-                        height: 216
+                        id: mailCell
+                        height: cellContainer.implicitHeight
                         onClicked: {
-                            PageStack.push("SecondPage.qml")
+                            pageStack.push("../SecondPage.qml")
                         }
 
-                        Row {
-                            x: 16
+
+                        RowLayout {
+                            id: cellContainer
+                            anchors.fill: parent
+                            anchors.margins: 16
+                            spacing: Theme.dp(16)
 
                             Rectangle {
+                                Layout.alignment: Qt.AlignTop
+                                id: roundDot
                                 x: 20
                                 y: 20
                                 color: "#3D6BE3"
@@ -84,36 +90,31 @@ Page {
                                 radius: width * 0.5
                             }
 
-                            Column {
-                                width: parent.width
 
+                            ColumnLayout {
                                 Label {
-                                    x: 16
+                                    id: authorTextView
                                     text: author
                                     color: "#FFFFFF"
-                                    font.pixelSize: 42
+                                    font.pointSize: 20
                                     font.bold: true
                                 }
 
                                 Label {
-                                    x: 16
+                                    id: subjectTextView
                                     text: subject
                                     color: "#FFFFFF"
-                                    topPadding: 8
-                                    font.pixelSize: 26
+                                    font.pointSize: 14
                                 }
 
                                 Label {
-                                    x: 16
-                                    width: column.width
-                                    topPadding: 12
-                                    bottomPadding: 12
+                                    id: messageTextView
                                     text: message
                                     wrapMode: Text.Wrap
                                     color: "#AAAAAA"
                                     maximumLineCount: 2
                                     lineHeight: 1.1
-                                    font.pixelSize: 28
+                                    font.pointSize: 14
                                 }
                             }
                         }
